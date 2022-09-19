@@ -1,4 +1,4 @@
-# NeoPixel
+![](cooltext419614084088539.png)
 ## Componentes: Ring, Meter
 ### Por: Robledo Sanchez Damian 19211719
 ![](Meter.jpg)
