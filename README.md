@@ -12,3 +12,25 @@ Estos son LED controlables individualmente, todos alojados en una cadena que se 
 
 https://wokwi.com/projects/342722793449718356
 ![](NPR.png)
+
+### GIF
+![](Pico.gif)
+
+### Codigo
+import board
+import time
+import neopixel
+
+n_pixels = 32
+pixels = neopixel.NeoPixel(board.GP0, n_pixels)
+pixels.brigthness = 0.5
+
+T = 0.333333333333333333333
+
+while True:
+  pixels.fill((255,0,0))
+  time.sleep(T)
+  pixels.fill((0,255,0))
+  time.sleep(T)
+  pixels.fill((0,0,255))
+  time.sleep(T)
